@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <title>lab51</title>
+    <meta name="generator" content="wxMaxima"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" type="text/css" href="lab51_htmlimg/lab51.css"/>
+  </head>
+  <body>
+    <!-- ****************************************************** -->
+    <!-- *        Created with wxMaxima version 21.05.2       * -->
+    <!-- ****************************************************** -->
+    <noscript>
+      <div class="error message">
+        <p>Please enable JavaScript in order to get a 2d display of the equations embedded in this web page.</p>
+      </div>
+    </noscript>
+    <p hidden="hidden">\(      \DeclareMathOperator{\abs}{abs}
+      \newcommand{\ensuremath}[1]{\mbox{$#1$}}
+\)</p>
+    <!-- Code cell -->
+    <table>
+      <tr>
+        <td>
+          <span class="prompt">(%i1)	
+  </span>
+        </td>
+        <td>
+          <span class="input">
+            <span class="code_operator">'</span>
+            <span class="code_function">integrate</span>
+            <span class="code_operator">(</span>
+            <span class="code_number">1</span>
+            <span class="code_operator">/</span>
+            <span class="code_operator">(</span>
+            <span class="code_operator">(</span>
+            <span class="code_number">1</span>
+            <span class="code_operator">+</span>
+            <span class="code_variable">x</span>
+            <span class="code_operator">·</span>
+            <span class="code_operator">·</span>
+            <span class="code_number">2</span>
+            <span class="code_operator">)</span>
+            <span class="code_operator">·</span>
+            <span class="code_function">atan</span>
+            <span class="code_operator">(</span>
+            <span class="code_variable">x</span>
+            <span class="code_operator">)</span>
+            <span class="code_operator">)</span>
+            <span class="code_endofline">,</span>
+            <span class="code_variable">x</span>
+            <span class="code_operator">)</span>
+            <span class="code_endofline">;</span>
+          </span>
+        </td>
+      </tr>
+    </table>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+      <mrow>
+        <mrow>
+          <mo>∫</mo>
+          <mfrac>
+            <mn>1</mn>
+            <mrow>
+              <mrow>
+                <mo>(</mo>
+                <mrow>
+                  <msup>
+                    <mo>x</mo>
+                    <mn>2</mn>
+                  </msup>
+                  <mo>+</mo>
+                  <mn>1</mn>
+                </mrow>
+                <mo>)</mo>
+              </mrow>
+              <mo>⁢</mo>
+              <mrow>
+                <mi>atan</mi>
+                <mo>⁡</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mo>x</mo>
+                  <mo>)</mo>
+                </mrow>
+              </mrow>
+            </mrow>
+          </mfrac>
+          <mrow>
+            <mo>d</mo>
+            <mo>x</mo>
+          </mrow>
+        </mrow>
+      </mrow>
+    </math>
+    <!-- Code cell -->
+    <table>
+      <tr>
+        <td>
+          <span class="prompt">(%i2)	
+  </span>
+        </td>
+        <td>
+          <span class="input">
+            <span class="code_function">integrate</span>
+            <span class="code_operator">(</span>
+            <span class="code_number">1</span>
+            <span class="code_operator">/</span>
+            <span class="code_operator">(</span>
+            <span class="code_operator">(</span>
+            <span class="code_number">1</span>
+            <span class="code_operator">+</span>
+            <span class="code_variable">x</span>
+            <span class="code_operator">·</span>
+            <span class="code_operator">·</span>
+            <span class="code_number">2</span>
+            <span class="code_operator">)</span>
+            <span class="code_operator">·</span>
+            <span class="code_function">atan</span>
+            <span class="code_operator">(</span>
+            <span class="code_variable">x</span>
+            <span class="code_operator">)</span>
+            <span class="code_operator">)</span>
+            <span class="code_endofline">,</span>
+            <span class="code_variable">x</span>
+            <span class="code_operator">)</span>
+            <span class="code_endofline">;</span>
+          </span>
+        </td>
+      </tr>
+    </table>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+      <mrow>
+        <mrow>
+          <mi>log</mi>
+          <mo>⁡</mo>
+          <mrow>
+            <mo>(</mo>
+            <mrow>
+              <mi>atan</mi>
+              <mo>⁡</mo>
+              <mrow>
+                <mo>(</mo>
+                <mo>x</mo>
+                <mo>)</mo>
+              </mrow>
+            </mrow>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+      </mrow>
+    </math>
+    <!-- Code cell -->
+    <table>
+      <tr>
+        <td>
+          <span class="prompt">(%i41)	
+  </span>
+        </td>
+        <td>
+          <span class="input">
+            <span class="code_operator">'</span>
+            <span class="code_function">integrate</span>
+            <span class="code_operator">(</span>
+            <span class="code_function">sqrt</span>
+            <span class="code_operator">(</span>
+            <span class="code_variable">x</span>
+            <span class="code_operator">)</span>
+            <span class="code_operator">·</span>
+            <span class="code_function">exp</span>
+            <span class="code_operator">(</span>
+            <span class="code_function">sqrt</span>
+            <span class="code_operator">(</span>
+            <span class="code_variable">x</span>
+            <span class="code_operator">)</span>
+            <span class="code_operator">)</span>
+            <span class="code_endofline">,</span>
+            <span class="code_variable">x</span>
+            <span class="code_operator">)</span>
+            <span class="code_endofline">;</span>
+          </span>
+        </td>
+      </tr>
+    </table>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+      <mrow>
+        <mrow>
+          <mo>∫</mo>
+          <mrow>
+            <msqrt>
+              <mo>x</mo>
+            </msqrt>
+            <mo>⁢</mo>
+            <msup>
+              <mo>%e</mo>
+              <msqrt>
+                <mo>x</mo>
+              </msqrt>
+            </msup>
+          </mrow>
+          <mrow>
+            <mo>d</mo>
+            <mo>x</mo>
+          </mrow>
+        </mrow>
+      </mrow>
+    </math>
+    <!-- Code cell -->
+    <table>
+      <tr>
+        <td>
+          <span class="prompt">(%i42)	
+  </span>
+        </td>
+        <td>
+          <span class="input">
+            <span class="code_function">integrate</span>
+            <span class="code_operator">(</span>
+            <span class="code_function">sqrt</span>
+            <span class="code_operator">(</span>
+            <span class="code_variable">x</span>
+            <span class="code_operator">)</span>
+            <span class="code_operator">·</span>
+            <span class="code_function">exp</span>
+            <span class="code_operator">(</span>
+            <span class="code_function">sqrt</span>
+            <span class="code_operator">(</span>
+            <span class="code_variable">x</span>
+            <span class="code_operator">)</span>
+            <span class="code_operator">)</span>
+            <span class="code_endofline">,</span>
+            <span class="code_variable">x</span>
+            <span class="code_operator">)</span>
+            <span class="code_endofline">;</span>
+          </span>
+        </td>
+      </tr>
+    </table>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+      <mrow>
+        <mn>2</mn>
+        <mo>⁢</mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <mo>x</mo>
+            <mo>−</mo>
+            <mn>2</mn>
+            <mo>⁢</mo>
+            <msqrt>
+              <mo>x</mo>
+            </msqrt>
+            <mo>+</mo>
+            <mn>2</mn>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>⁢</mo>
+        <msup>
+          <mo>%e</mo>
+          <msqrt>
+            <mo>x</mo>
+          </msqrt>
+        </msup>
+      </mrow>
+    </math>
+    <!-- Code cell -->
+    <table>
+      <tr>
+        <td>
+          <span class="prompt">(%i43)	
+  </span>
+        </td>
+        <td>
+          <span class="input">
+            <span class="code_operator">'</span>
+            <span class="code_function">diff</span>
+            <span class="code_operator">(</span>
+            <span class="code_operator">(</span>
+            <span class="code_operator">−</span>
+            <span class="code_number">6</span>
+            <span class="code_operator">/</span>
+            <span class="code_variable">x</span>
+            <span class="code_operator">)</span>
+            <span class="code_operator">+</span>
+            <span class="code_number">3</span>
+            <span class="code_operator">·</span>
+            <span class="code_operator">(</span>
+            <span class="code_operator">(</span>
+            <span class="code_variable">%e</span>
+            <span class="code_operator">)</span>
+            <span class="code_operator">·</span>
+            <span class="code_operator">·</span>
+            <span class="code_variable">x</span>
+            <span class="code_operator">)</span>
+            <span class="code_operator">·</span>
+            <span class="code_variable">x</span>
+            <span class="code_operator">·</span>
+            <span class="code_operator">·</span>
+            <span class="code_number">4</span>
+            <span class="code_operator">)</span>
+            <span class="code_endofline">;</span>
+          </span>
+        </td>
+      </tr>
+    </table>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+      <mrow>
+        <mrow>
+          <mi>del</mi>
+          <mo>⁡</mo>
+          <mrow>
+            <mo>(</mo>
+            <mrow>
+              <mn>3</mn>
+              <mo>⁢</mo>
+              <msup>
+                <mo>x</mo>
+                <mn>4</mn>
+              </msup>
+              <mo>⁢</mo>
+              <msup>
+                <mo>%e</mo>
+                <mo>x</mo>
+              </msup>
+              <mo>−</mo>
+              <mfrac>
+                <mn>6</mn>
+                <mo>x</mo>
+              </mfrac>
+            </mrow>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+      </mrow>
+    </math>
+    <!-- Code cell -->
+    <table>
+      <tr>
+        <td>
+          <span class="prompt">(%i44)	
+  </span>
+        </td>
+        <td>
+          <span class="input">
+            <span class="code_function">diff</span>
+            <span class="code_operator">(</span>
+            <span class="code_operator">(</span>
+            <span class="code_operator">−</span>
+            <span class="code_number">6</span>
+            <span class="code_operator">/</span>
+            <span class="code_variable">x</span>
+            <span class="code_operator">)</span>
+            <span class="code_operator">+</span>
+            <span class="code_number">3</span>
+            <span class="code_operator">·</span>
+            <span class="code_operator">(</span>
+            <span class="code_operator">(</span>
+            <span class="code_variable">%e</span>
+            <span class="code_operator">)</span>
+            <span class="code_operator">·</span>
+            <span class="code_operator">·</span>
+            <span class="code_variable">x</span>
+            <span class="code_operator">)</span>
+            <span class="code_operator">·</span>
+            <span class="code_variable">x</span>
+            <span class="code_operator">·</span>
+            <span class="code_operator">·</span>
+            <span class="code_number">4</span>
+            <span class="code_operator">)</span>
+            <span class="code_endofline">;</span>
+          </span>
+        </td>
+      </tr>
+    </table>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+      <mrow>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <mn>3</mn>
+            <mo>⁢</mo>
+            <msup>
+              <mo>x</mo>
+              <mn>4</mn>
+            </msup>
+            <mo>⁢</mo>
+            <msup>
+              <mo>%e</mo>
+              <mo>x</mo>
+            </msup>
+            <mo>+</mo>
+            <mn>12</mn>
+            <mo>⁢</mo>
+            <msup>
+              <mo>x</mo>
+              <mn>3</mn>
+            </msup>
+            <mo>⁢</mo>
+            <msup>
+              <mo>%e</mo>
+              <mo>x</mo>
+            </msup>
+            <mo>+</mo>
+            <mfrac>
+              <mn>6</mn>
+              <msup>
+                <mo>x</mo>
+                <mn>2</mn>
+              </msup>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>⁢</mo>
+        <mrow>
+          <mi>del</mi>
+          <mo>⁡</mo>
+          <mrow>
+            <mo>(</mo>
+            <mo>x</mo>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+      </mrow>
+    </math>
+    <!-- Code cell -->
+    <table>
+      <tr>
+        <td>
+          <span class="prompt">(%i45)	
+  </span>
+        </td>
+        <td>
+          <span class="input">
+            <span class="code_operator">'</span>
+            <span class="code_function">diff</span>
+            <span class="code_operator">(</span>
+            <span class="code_operator">(</span>
+            <span class="code_operator">(</span>
+            <span class="code_variable">%e</span>
+            <span class="code_operator">)</span>
+            <span class="code_operator">·</span>
+            <span class="code_operator">·</span>
+            <span class="code_variable">x</span>
+            <span class="code_operator">)</span>
+            <span class="code_operator">/</span>
+            <span class="code_operator">(</span>
+            <span class="code_function">sin</span>
+            <span class="code_operator">(</span>
+            <span class="code_variable">x</span>
+            <span class="code_operator">)</span>
+            <span class="code_operator">−</span>
+            <span class="code_number">1</span>
+            <span class="code_operator">)</span>
+            <span class="code_operator">)</span>
+            <span class="code_endofline">;</span>
+          </span>
+        </td>
+      </tr>
+    </table>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+      <mrow>
+        <mrow>
+          <mi>del</mi>
+          <mo>⁡</mo>
+          <mrow>
+            <mo>(</mo>
+            <mfrac>
+              <msup>
+                <mo>%e</mo>
+                <mo>x</mo>
+              </msup>
+              <mrow>
+                <mrow>
+                  <mi>sin</mi>
+                  <mo>⁡</mo>
+                  <mrow>
+                    <mo>(</mo>
+                    <mo>x</mo>
+                    <mo>)</mo>
+                  </mrow>
+                </mrow>
+                <mo>−</mo>
+                <mn>1</mn>
+              </mrow>
+            </mfrac>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+      </mrow>
+    </math>
+    <!-- Code cell -->
+    <table>
+      <tr>
+        <td>
+          <span class="prompt">(%i46)	
+  </span>
+        </td>
+        <td>
+          <span class="input">
+            <span class="code_function">diff</span>
+            <span class="code_operator">(</span>
+            <span class="code_operator">(</span>
+            <span class="code_operator">(</span>
+            <span class="code_variable">%e</span>
+            <span class="code_operator">)</span>
+            <span class="code_operator">·</span>
+            <span class="code_operator">·</span>
+            <span class="code_variable">x</span>
+            <span class="code_operator">)</span>
+            <span class="code_operator">/</span>
+            <span class="code_operator">(</span>
+            <span class="code_function">sin</span>
+            <span class="code_operator">(</span>
+            <span class="code_variable">x</span>
+            <span class="code_operator">)</span>
+            <span class="code_operator">−</span>
+            <span class="code_number">1</span>
+            <span class="code_operator">)</span>
+            <span class="code_operator">)</span>
+            <span class="code_endofline">;</span>
+            <span class="code_operator">'</span>
+            <span class="code_function">integrate</span>
+            <span class="code_operator">(</span>
+            <span class="code_function">sqrt</span>
+            <span class="code_operator">(</span>
+            <span class="code_variable">x</span>
+            <span class="code_operator">)</span>
+            <span class="code_operator">·</span>
+            <span class="code_variable">exp</span>
+            <span class="code_operator">·</span>
+            <span class="code_operator">(</span>
+            <span class="code_function">sqrt</span>
+            <span class="code_operator">(</span>
+            <span class="code_variable">x</span>
+            <span class="code_operator">)</span>
+            <span class="code_operator">)</span>
+            <span class="code_endofline">,</span>
+            <span class="code_variable">x</span>
+            <span class="code_operator">)</span>
+            <span class="code_endofline">;</span>
+          </span>
+        </td>
+      </tr>
+    </table>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+      <mrow>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <mfrac>
+              <msup>
+                <mo>%e</mo>
+                <mo>x</mo>
+              </msup>
+              <mrow>
+                <mrow>
+                  <mi>sin</mi>
+                  <mo>⁡</mo>
+                  <mrow>
+                    <mo>(</mo>
+                    <mo>x</mo>
+                    <mo>)</mo>
+                  </mrow>
+                </mrow>
+                <mo>−</mo>
+                <mn>1</mn>
+              </mrow>
+            </mfrac>
+            <mo>−</mo>
+            <mfrac>
+              <mrow>
+                <msup>
+                  <mo>%e</mo>
+                  <mo>x</mo>
+                </msup>
+                <mo>⁢</mo>
+                <mrow>
+                  <mi>cos</mi>
+                  <mo>⁡</mo>
+                  <mrow>
+                    <mo>(</mo>
+                    <mo>x</mo>
+                    <mo>)</mo>
+                  </mrow>
+                </mrow>
+              </mrow>
+              <msup>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <mrow>
+                      <mi>sin</mi>
+                      <mo>⁡</mo>
+                      <mrow>
+                        <mo>(</mo>
+                        <mo>x</mo>
+                        <mo>)</mo>
+                      </mrow>
+                    </mrow>
+                    <mo>−</mo>
+                    <mn>1</mn>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mn>2</mn>
+              </msup>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>⁢</mo>
+        <mrow>
+          <mi>del</mi>
+          <mo>⁡</mo>
+          <mrow>
+            <mo>(</mo>
+            <mo>x</mo>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+      </mrow>
+    </math>
+    <!-- Code cell -->
+    <table>
+      <tr>
+        <td>
+          <span class="prompt">(%i47)	
+  </span>
+        </td>
+        <td>
+          <span class="input">
+            <span class="code_operator">'</span>
+            <span class="code_function">diff</span>
+            <span class="code_operator">(</span>
+            <span class="code_operator">(</span>
+            <span class="code_operator">(</span>
+            <span class="code_variable">x</span>
+            <span class="code_operator">·</span>
+            <span class="code_operator">·</span>
+            <span class="code_number">3</span>
+            <span class="code_operator">)</span>
+            <span class="code_operator">·</span>
+            <span class="code_function">log</span>
+            <span class="code_operator">(</span>
+            <span class="code_variable">x</span>
+            <span class="code_operator">)</span>
+            <span class="code_operator">)</span>
+            <span class="code_operator">−</span>
+            <span class="code_operator">(</span>
+            <span class="code_number">4</span>
+            <span class="code_operator">·</span>
+            <span class="code_operator">(</span>
+            <span class="code_function">acos</span>
+            <span class="code_operator">(</span>
+            <span class="code_variable">x</span>
+            <span class="code_operator">)</span>
+            <span class="code_operator">)</span>
+            <span class="code_operator">)</span>
+            <span class="code_operator">)</span>
+            <span class="code_endofline">;</span>
+          </span>
+        </td>
+      </tr>
+    </table>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+      <mrow>
+        <mrow>
+          <mi>del</mi>
+          <mo>⁡</mo>
+          <mrow>
+            <mo>(</mo>
+            <mrow>
+              <msup>
+                <mo>x</mo>
+                <mn>3</mn>
+              </msup>
+              <mo>⁢</mo>
+              <mrow>
+                <mi>log</mi>
+                <mo>⁡</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mo>x</mo>
+                  <mo>)</mo>
+                </mrow>
+              </mrow>
+              <mo>−</mo>
+              <mn>4</mn>
+              <mo>⁢</mo>
+              <mrow>
+                <mi>acos</mi>
+                <mo>⁡</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mo>x</mo>
+                  <mo>)</mo>
+                </mrow>
+              </mrow>
+            </mrow>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+      </mrow>
+    </math>
+    <!-- Code cell -->
+    <table>
+      <tr>
+        <td>
+          <span class="prompt">(%i48)	
+  </span>
+        </td>
+        <td>
+          <span class="input">
+            <span class="code_function">diff</span>
+            <span class="code_operator">(</span>
+            <span class="code_operator">(</span>
+            <span class="code_operator">(</span>
+            <span class="code_variable">x</span>
+            <span class="code_operator">·</span>
+            <span class="code_operator">·</span>
+            <span class="code_number">3</span>
+            <span class="code_operator">)</span>
+            <span class="code_operator">·</span>
+            <span class="code_function">log</span>
+            <span class="code_operator">(</span>
+            <span class="code_variable">x</span>
+            <span class="code_operator">)</span>
+            <span class="code_operator">)</span>
+            <span class="code_operator">−</span>
+            <span class="code_operator">(</span>
+            <span class="code_number">4</span>
+            <span class="code_operator">·</span>
+            <span class="code_operator">(</span>
+            <span class="code_function">acos</span>
+            <span class="code_operator">(</span>
+            <span class="code_variable">x</span>
+            <span class="code_operator">)</span>
+            <span class="code_operator">)</span>
+            <span class="code_operator">)</span>
+            <span class="code_operator">)</span>
+            <span class="code_endofline">;</span>
+          </span>
+        </td>
+      </tr>
+    </table>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+      <mrow>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <mn>3</mn>
+            <mo>⁢</mo>
+            <msup>
+              <mo>x</mo>
+              <mn>2</mn>
+            </msup>
+            <mo>⁢</mo>
+            <mrow>
+              <mi>log</mi>
+              <mo>⁡</mo>
+              <mrow>
+                <mo>(</mo>
+                <mo>x</mo>
+                <mo>)</mo>
+              </mrow>
+            </mrow>
+            <mo>+</mo>
+            <mfrac>
+              <mn>4</mn>
+              <msqrt>
+                <mrow>
+                  <mn>1</mn>
+                  <mo>−</mo>
+                  <msup>
+                    <mo>x</mo>
+                    <mn>2</mn>
+                  </msup>
+                </mrow>
+              </msqrt>
+            </mfrac>
+            <mo>+</mo>
+            <msup>
+              <mo>x</mo>
+              <mn>2</mn>
+            </msup>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>⁢</mo>
+        <mrow>
+          <mi>del</mi>
+          <mo>⁡</mo>
+          <mrow>
+            <mo>(</mo>
+            <mo>x</mo>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+      </mrow>
+    </math>
+    <!-- Code cell -->
+    <table>
+      <tr>
+        <td>
+          <span class="prompt">(%i49)	
+  </span>
+        </td>
+        <td>
+          <span class="input">
+            <span class="code_operator">'</span>
+            <span class="code_function">diff</span>
+            <span class="code_operator">(</span>
+            <span class="code_operator">(</span>
+            <span class="code_function">tan</span>
+            <span class="code_operator">(</span>
+            <span class="code_variable">x</span>
+            <span class="code_operator">)</span>
+            <span class="code_operator">−</span>
+            <span class="code_number">5</span>
+            <span class="code_operator">)</span>
+            <span class="code_operator">/</span>
+            <span class="code_operator">(</span>
+            <span class="code_operator">(</span>
+            <span class="code_variable">%e</span>
+            <span class="code_operator">)</span>
+            <span class="code_operator">·</span>
+            <span class="code_operator">·</span>
+            <span class="code_variable">x</span>
+            <span class="code_operator">)</span>
+            <span class="code_operator">)</span>
+            <span class="code_endofline">;</span>
+          </span>
+        </td>
+      </tr>
+    </table>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+      <mrow>
+        <mrow>
+          <mi>del</mi>
+          <mo>⁡</mo>
+          <mrow>
+            <mo>(</mo>
+            <mrow>
+              <msup>
+                <mo>%e</mo>
+                <mrow>
+                  <mo>−</mo>
+                  <mo>x</mo>
+                </mrow>
+              </msup>
+              <mo>⁢</mo>
+              <mrow>
+                <mo>(</mo>
+                <mrow>
+                  <mrow>
+                    <mi>tan</mi>
+                    <mo>⁡</mo>
+                    <mrow>
+                      <mo>(</mo>
+                      <mo>x</mo>
+                      <mo>)</mo>
+                    </mrow>
+                  </mrow>
+                  <mo>−</mo>
+                  <mn>5</mn>
+                </mrow>
+                <mo>)</mo>
+              </mrow>
+            </mrow>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+      </mrow>
+    </math>
+    <!-- Code cell -->
+    <table>
+      <tr>
+        <td>
+          <span class="prompt">(%i50)	
+  </span>
+        </td>
+        <td>
+          <span class="input">
+            <span class="code_function">diff</span>
+            <span class="code_operator">(</span>
+            <span class="code_operator">(</span>
+            <span class="code_function">tan</span>
+            <span class="code_operator">(</span>
+            <span class="code_variable">x</span>
+            <span class="code_operator">)</span>
+            <span class="code_operator">−</span>
+            <span class="code_number">5</span>
+            <span class="code_operator">)</span>
+            <span class="code_operator">/</span>
+            <span class="code_operator">(</span>
+            <span class="code_operator">(</span>
+            <span class="code_variable">%e</span>
+            <span class="code_operator">)</span>
+            <span class="code_operator">·</span>
+            <span class="code_operator">·</span>
+            <span class="code_variable">x</span>
+            <span class="code_operator">)</span>
+            <span class="code_operator">)</span>
+            <span class="code_endofline">;</span>
+          </span>
+        </td>
+      </tr>
+    </table>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+      <mrow>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <msup>
+              <mo>%e</mo>
+              <mrow>
+                <mo>−</mo>
+                <mo>x</mo>
+              </mrow>
+            </msup>
+            <mo>⁢</mo>
+            <msup>
+              <mrow>
+                <mi>sec</mi>
+                <mo>⁡</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mo>x</mo>
+                  <mo>)</mo>
+                </mrow>
+              </mrow>
+              <mn>2</mn>
+            </msup>
+            <mo>−</mo>
+            <msup>
+              <mo>%e</mo>
+              <mrow>
+                <mo>−</mo>
+                <mo>x</mo>
+              </mrow>
+            </msup>
+            <mo>⁢</mo>
+            <mrow>
+              <mo>(</mo>
+              <mrow>
+                <mrow>
+                  <mi>tan</mi>
+                  <mo>⁡</mo>
+                  <mrow>
+                    <mo>(</mo>
+                    <mo>x</mo>
+                    <mo>)</mo>
+                  </mrow>
+                </mrow>
+                <mo>−</mo>
+                <mn>5</mn>
+              </mrow>
+              <mo>)</mo>
+            </mrow>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>⁢</mo>
+        <mrow>
+          <mi>del</mi>
+          <mo>⁡</mo>
+          <mrow>
+            <mo>(</mo>
+            <mo>x</mo>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+      </mrow>
+    </math>
+    <hr/>
+    <p>
+      <small> Created with 
+        <a href="https://wxMaxima-developers.github.io/wxmaxima/">wxMaxima</a>.</small>
+    </p>
+    <small> The source of this Maxima session can be downloaded 
+      <a href="lab51_htmlimg/lab51.wxmx">here</a>.</small>
+  </body>
+</html>
